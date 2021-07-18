@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextfirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Second Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextfirstname"
+        app:layout_constraintStart_toStartOf="@+id/editTextfirstname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfirstname" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextlastname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextlastname" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="onclickregister"
+        android:text="Button"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailAddress"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewfirst"
+        android:layout_width="163dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/registerbtn"
+        app:layout_constraintStart_toStartOf="@+id/registerbtn"
+        app:layout_constraintTop_toBottomOf="@+id/registerbtn" />
+
+    <TextView
+        android:id="@+id/textviewlast"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewfirst"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewfirst"
+        app:layout_constraintTop_toBottomOf="@+id/textViewfirst" />
+
+    <TextView
+        android:id="@+id/textViewemail"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textviewlast"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textviewlast"
+        app:layout_constraintTop_toBottomOf="@+id/textviewlast" />
+</androidx.constraintlayout.widget.ConstraintLayout>
